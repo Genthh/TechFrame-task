@@ -1,0 +1,36 @@
+.invoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+  }
+  
+  .total p {
+    font-weight: bold;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
