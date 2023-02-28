@@ -33,4 +33,18 @@
     text-align: left;
     padding: 8px;
   }
-  
+  .print{
+    margin: 10px;
+    padding: 2px 1px 1px 1px;
+  }
+  .print-button{
+    padding: 0.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    outline-style: none;
+    background-color: #f2f2f2;
+    color: black;
+    width: 130px;
+    font-weight: 500;
+    border-color: #f2f2f2;
+  }

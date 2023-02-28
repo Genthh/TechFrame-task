@@ -14,6 +14,13 @@ const CheckoutPage = ({ cart }) => {
     VATRate = 0.16;
   }
 
+  function handlePrintClick() {
+    window.print();
+  }
+
+  const total = cart.reduce((accumulator, item) => accumulator + (item.amount * item.price + VAT), 0);
+  const subtotal = cart.reduce((accumulator, item) => accumulator + (item.amount * item.price), 0);
+  const VATAmount = total - subtotal;
   return (
     <div className="invoice">
       <h1>Invoice</h1>
@@ -42,7 +49,24 @@ const CheckoutPage = ({ cart }) => {
             </tr>
           ))}
         </tbody>
-      </table>
+        <tfoot>
+          <tr>
+            <td colSpan="5" style={{ textAlign: "right" }}>Subtotal:</td>
+            <td>{subtotal.toFixed(2)}€</td>
+            </tr>
+            <tr>
+            <td  colSpan="5" style={{ textAlign: "right" }}>VAT:</td>
+            <td>{VATAmount.toFixed(2)}€</td>
+            </tr>
+            <tr>
+            <td colSpan="5" style={{ textAlign: "right" }}>Total:</td>
+            <td>{total.toFixed(2)}€</td>
+          </tr>
+        </tfoot>
+      </table> 
+      <div className="print">
+        <button className="print-button" onClick={handlePrintClick}>Print the invoice</button>
+      </div>
     </div>
   );
 };
