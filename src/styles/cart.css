@@ -76,3 +76,34 @@ article {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
+
+.checkout_button{
+  padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  outline-style: none;
+  background-color: black;
+  color: white;
+  width: 110px;
+  font-size: 17px;
+}
+
+.btn{
+  padding-left: 23rem;
+}
+
+.btn button{
+  width: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-remove{
+  padding-left: 13rem;
+}
+
+.btn-remove button{
+  width: 120px;
+  height: 30px;
+}

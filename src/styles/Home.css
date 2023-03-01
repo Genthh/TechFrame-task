@@ -1,25 +1,36 @@
 * {
   margin: 0;
   padding: 0;
+  width: 100%;
+  background-color: transparent;
 }
 section {
-  width: 95%;
+  width: 70%;
   margin: auto;
-  margin-top: 5%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 3%;
+  margin-top: 4%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
-.cards {
-  width: 450px;
-  padding: 20px;
+.cards { 
+  width: 200px;
+  justify-content: center;
+  border: 2px solid rgb(13, 16, 13);
+  background-color: rgba(254, 248, 248, 0.622);
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin: 0.7rem;
 }
 .cards:hover {
-  box-shadow: 0 10px 10px 10px rbg(0, 0, 0, 0.1);
+  box-shadow: rbg(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .image_box img {
-  padding-left: 13rem;
   width: 190px;
   height: 180px;
 }
@@ -28,31 +39,34 @@ section {
   width: 150px;
   height: 200px;
 }
-.details p:nth-child(1) {
+.cards p:nth-child(1) {
   padding-left: 13rem;
   font-weight: bold;
   font-size: 1rem;
 }
-.details p:nth-child(2) {
-  padding-left: 13rem;
-  padding-top: 0.4rem;
+.cards p:nth-child(2) {
   padding-bottom: 0.4rem;
-  color: grey;
+  color: black;
   font-size: 1rem;
-  /* padding: 3px; */
+  font-weight: bold;
 }
-.details p:nth-child(3) {
+.cards p:nth-child(3) {
   font-weight: bold;
   color: grey;
-  padding: 3px;
+  padding: 1px;
 }
-.details button {
-  padding: 10px 14px 2px 5px;
-  margin-left: 13rem;
-  /* padding-left: 1rem; */
-  border: none;
-  font-weight: bold;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  outline: none;
+.cards button {
+  border-radius: 4px;
+  cursor: pointer;
+  outline-style: none;
+  background-color: #d7d3d3f3;
+  text-align: center;
+  align-items: center;
+  color: rgb(45, 44, 44);
+  width: 110px;
+  font-weight: 600;
+  border-color: #d7d3d3f3;
+  box-shadow: none;
+  padding: 0.2rem;
+  margin-top: 0.3rem;
 }

@@ -1,14 +1,18 @@
 .invoice {
+  width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
   }
+
+  .invoice h1{
+    padding-left: 39rem;
+  }
   
   .total {
     display: flex;
     justify-content: space-between;
-    width: 80%;
     margin-top: 10px;
   }
   
@@ -17,9 +21,10 @@
   }
   
   table {
-    width: 80%;
+    width: 130%;
     border-collapse: collapse;
     margin-top: 20px;
+    margin-left: 55rem;
   }
   
   th {
@@ -34,17 +39,20 @@
     padding: 8px;
   }
   .print{
-    margin: 10px;
+    margin-left: 98rem;
+    margin-top: 1rem;
     padding: 2px 1px 1px 1px;
   }
   .print-button{
-    padding: 0.3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
     border-radius: 4px;
     cursor: pointer;
     outline-style: none;
     background-color: #f2f2f2;
     color: black;
+    height: 30px;
     width: 130px;
-    font-weight: 500;
+    font-weight: bold;
     border-color: #f2f2f2;
   }

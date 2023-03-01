@@ -10,7 +10,7 @@ const CheckoutPage = ({ cart }) => {
 
   if (totalWithVAT > 500) {
     discount = totalWithVAT * 0.1;
-    totalWithVAT = totalWithVAT - discount;
+    // totalWithVAT = totalWithVAT - discount;
     VATRate = 0.16;
   }
 
@@ -42,7 +42,7 @@ const CheckoutPage = ({ cart }) => {
             <tr key={item.id}>
               <td>{item.title}</td>
               <td>{item.amount}</td>
-              <td>{discount.toFixed(2)}%</td> 
+              <td>0%</td> 
               <td>{item.price.toFixed(2)}€</td>
               <td>({(VATRate * 100).toFixed(0)}%)</td>
               <td>{(item.amount * item.price + VAT).toFixed(2)}€</td>
